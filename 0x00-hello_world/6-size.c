@@ -1,11 +1,10 @@
 #include <stdio.h>
-int main(void)
-{
-	/**
+/**
  *main - Entry point
  *Return: always 0 (success)
  */
-	/* code for know size of Data type */
+int main(void)
+{
 
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
 	printf("Size of an int: %d byte(s)\n", sizeof(int));

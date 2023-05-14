@@ -1,19 +1,21 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * print_alphabet_x10 - function that prints 10x alphabets
+ * print_alphabet_x10 - function that prints 10 times
+ * the alphabet, in lowercase
  *
- * REturn: alwasy 0
  */
+
 void print_alphabet_x10(void)
 {
-	int i;
-	char j;
+	int i, j;
 
-	for (i = 1 ; i <= 10 ; i++)
+	for (i = 1; i <= 10; i++)
 	{
-		for (j = 'a' ; j <= 'z' ; j++)
+		for (j = 'a'; j <= 'z'; j++)
+		{
 			_putchar(j);
+		}
 		_putchar('\n');
 	}
 }

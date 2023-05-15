@@ -1,10 +1,13 @@
-#include "main.h"
-
+#include"main.h"
+#include<ctype.h>
 /**
- * print_sign - function that prints signs
+ * print_sign - function to print sign of a number
  *
- * @n: function parameter
- * Return: 1, 0 and -1
+ * @n: checks input from function
+ *
+ * Return: returns 1 and prints '+' if 'n' is greater than zero
+ *  returns 0 and prints 0 if 'n' is zero
+ *   returns -1 and prints '-' if 'n' is less than zero
  */
 
 int print_sign(int n)
@@ -12,21 +15,21 @@ int print_sign(int n)
 	if (n > 0)
 	{
 		_putchar('+');
-		_putchar(',');
-		_putchar(' ');
-		return (0);
+
+		return (1);
 	}
+	
 	else if (n == 0)
 	{
 		_putchar('0');
-		_putchar(',');
-		_putchar(' ');return (0);
+
+		return (0);
 	}
+
 	else
 	{
-		_putchar('_');
-                _putchar(',');
-                _putchar(' ');
-                return (-1);
+		_putchar('-');
+
+		return (-1);
 	}
 }

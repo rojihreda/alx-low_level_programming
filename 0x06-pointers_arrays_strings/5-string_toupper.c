@@ -1,32 +1,23 @@
-#include "main.h"
-#include <stdio.h>
+#include"main.h"
 
 /**
- * isLower - function to changes all lowercase letters of a string to uppercase
+ * string_toupper - function to changes
+ * all lowercase letters of a string to upper
  *
- * @c: characters
- *
- * Return:1 if true 0 is false
+ * @str: string
+ * Return: string
  */
 
-int isLower(char c)
-{
-	return (c >= 97 && c <= 122);
-}
-
-/**
- * isDelimiter - deternines whether ascii is a deliniter
- * @c: character
- * Return: 1 if true 0 if false
- */
-
-int isDelimiter(char c)
+char *string_toupper(char *str)
 {
 	int i;
-	char delimiter[] = " \t\n, .!?\"()()";
 
-	for (i = 0; i < 12; i++)
-		if (c == delimiter[i])
-			return (1);
-	return (0);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] >= 97 && str[i] <= 122)
+		{
+			str[i] = str[i] - 32;
+		}
+	}
+	return (str);
 }

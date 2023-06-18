@@ -13,7 +13,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	float tota_sum;
+	float total_sum;
 
 	while (1)
 	{

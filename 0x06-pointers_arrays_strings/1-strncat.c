@@ -3,8 +3,8 @@
 /**
  * *_strncat - function to concatenates two strings
  *
- * @*dest: first strings
- * @*src: sacand string
+ * @dest: first strings
+ * @src: sacand string
  * @n: int
  *
  * Return: *dest
@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	c = 0;
 
-	while ( dest[c])
+	while (dest[c])
 		c++;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)

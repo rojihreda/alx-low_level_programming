@@ -7,7 +7,7 @@
  * Return: p ot 1
  */
 
-char *strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int itr, jtr;
 	char *p;
